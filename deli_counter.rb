@@ -28,3 +28,13 @@ def now_serving(katz_deli)
     katz_deli.shift
   end
 end
+
+line(katz_deli)
+now_serving(katz_deli)
+take_a_number(katz_deli, "Ada")
+line(katz_deli)
+take_a_number(katz_deli, "Grace")
+take_a_number(katz_deli, "Spencer")
+line(katz_deli)
+now_serving(katz_deli)
+line(katz_deli)
