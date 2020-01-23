@@ -1,10 +1,12 @@
+require 'pry'
 katz_deli = []
 def line(katz_deli)
   if katz_deli.count == 0
     puts "The line is currently empty."
   else
     current_line = []
-    katz_deli.map.with_index(1) do |person, i|
+    katz_deli.each_with_index do |person, i|
+    binding.pry
     current_line.push("#{i} #{person}. #{katz_deli[i]}")
     i += 1
     end
