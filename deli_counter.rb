@@ -9,7 +9,8 @@ def line(katz_deli)
     current_line.push("#{i + 1}. #{person} ")
     i += 1
     end
-    puts ("The line is currently " + current_line.to_s)
+    new_current_line = current_line.join("")
+    puts ("The line is currently " + new_current_line)
   end
 end
 
@@ -30,9 +31,9 @@ end
 
 line(katz_deli)
 now_serving(katz_deli)
-take_a_number(katz_deli, "Logan")
+take_a_number(katz_deli, "Ada")
 line(katz_deli)
-take_a_number(katz_deli, "Avi")
+take_a_number(katz_deli, "Grace")
 take_a_number(katz_deli, "Spencer")
 line(katz_deli)
 now_serving(katz_deli)
