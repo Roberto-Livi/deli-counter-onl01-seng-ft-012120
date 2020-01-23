@@ -6,7 +6,7 @@ def line(katz_deli)
   else
     current_line = []
     katz_deli.each_with_index do |person, i|
-    current_line.push("#{i + 1}. #{person}")
+    current_line.push(" #{i + 1}. #{person}")
     i += 1
     end
     new_current_line = current_line.join("")
