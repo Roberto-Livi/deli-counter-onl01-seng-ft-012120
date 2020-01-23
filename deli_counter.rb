@@ -10,7 +10,7 @@ def line(katz_deli)
     i += 1
     end
     new_current_line = current_line.join("")
-    puts ("The line is currently: " + new_current_line)
+    puts ("The line is currently: " + new_current_line.join(" "))
   end
 end
 
