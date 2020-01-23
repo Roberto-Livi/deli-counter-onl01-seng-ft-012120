@@ -8,7 +8,7 @@ def line(katz_deli)
     katz_deli.map.with_index(1) do |person, i|
     current_line.push("#{person}. #{katz_deli[i]}")
     end
-    return ("The line is currently " + current_line.to_s)
+    puts ("The line is currently " + current_line.to_s)
   end
 end
 
@@ -30,3 +30,4 @@ take_a_number(katz_deli, "Ada")
 line(katz_deli)
 take_a_number(katz_deli, "Grace")
 line(katz_deli)
+
