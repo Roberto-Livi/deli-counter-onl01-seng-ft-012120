@@ -1,14 +1,15 @@
 katz_deli = []
 def line(katz_deli)
   if katz_deli.count == 0
+    current_line = []
     puts "The line is currently empty."
   else
-    number = 1
-    i = 0
-    puts "The line is currently #{number}. #{katz_deli[i]}"
-      number += 1
-      i += 1
+    current_line = []
+    katz_deli.map.with_index(1) do |person, i|
+    current_line.push("#{person}. #{katz_deli[i]}")
     end
+    return ("The line is currently " + current_line.to_s)
+  end
 end
 
 
@@ -18,8 +19,10 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
+  if
   puts "Currently serving #{katz_deli[0]}"
   katz_deli[0].shift
+  end
 end
 
 line(katz_deli)
