@@ -8,7 +8,7 @@ def line(katz_deli)
     current_line.push("#{i} #{person}. #{katz_deli[i]}")
     i += 1
     end
-    puts ("The line is currently " + current_line)
+    puts ("The line is currently " + current_line.to_s)
   end
 end
 
