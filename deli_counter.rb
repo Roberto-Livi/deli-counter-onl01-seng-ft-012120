@@ -1,4 +1,4 @@
-require 'pry'
+
 katz_deli = []
 def line(katz_deli)
   if katz_deli.count == 0
@@ -6,8 +6,7 @@ def line(katz_deli)
   else
     current_line = []
     katz_deli.each_with_index do |person, i|
-    #binding.pry
-    current_line.push("#{i} #{person} ")
+    current_line.push("#{i + 1}. #{person} ")
     i += 1
     end
     puts ("The line is currently " + current_line.to_s)
@@ -21,15 +20,15 @@ def take_a_number(katz_deli, name)
 end
 
 def now_serving(katz_deli)
-  if
   puts "Currently serving #{katz_deli[0]}"
-  katz_deli[0].shift
-  end
+  katz_deli.shift
 end
 
 line(katz_deli)
 take_a_number(katz_deli, "Ada")
 line(katz_deli)
 take_a_number(katz_deli, "Grace")
+take_a_number(katz_deli, "Spencer")
 line(katz_deli)
-
+now_serving(katz_deli)
+line(katz_deli)
