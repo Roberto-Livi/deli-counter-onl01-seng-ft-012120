@@ -6,8 +6,8 @@ def line(katz_deli)
   else
     current_line = []
     katz_deli.each_with_index do |person, i|
-    binding.pry
-    current_line.push("#{i} #{person}. #{katz_deli[i]}")
+    #binding.pry
+    current_line.push("#{i} #{person} ")
     i += 1
     end
     puts ("The line is currently " + current_line.to_s)
