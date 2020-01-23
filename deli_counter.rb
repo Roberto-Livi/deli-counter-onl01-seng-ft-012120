@@ -9,8 +9,8 @@ def line(katz_deli)
     current_line.push("#{i + 1}. #{person}")
     i += 1
     end
-    new_current_line = current_line.join("")
-    puts ("The line is currently: " + new_current_line.join(" "))
+    new_current_line = current_line.join(" ")
+    puts ("The line is currently: " + new_current_line)
   end
 end
 
