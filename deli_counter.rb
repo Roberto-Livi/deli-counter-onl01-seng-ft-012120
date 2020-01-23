@@ -6,7 +6,7 @@ def line(katz_deli)
   else
     current_line = []
     katz_deli.each_with_index do |person, i|
-    current_line.push("#{i + 1}. #{person}")
+    current_line.push(" #{i + 1}.#{person}")
     i += 1
     end
     new_current_line = current_line.join("")
@@ -28,13 +28,3 @@ def now_serving(katz_deli)
     katz_deli.shift
   end
 end
-
-line(katz_deli)
-now_serving(katz_deli)
-take_a_number(katz_deli, "Ada")
-line(katz_deli)
-take_a_number(katz_deli, "Grace")
-take_a_number(katz_deli, "Spencer")
-line(katz_deli)
-now_serving(katz_deli)
-line(katz_deli)
