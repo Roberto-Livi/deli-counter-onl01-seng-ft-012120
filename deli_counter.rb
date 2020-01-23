@@ -1,12 +1,12 @@
 katz_deli = []
 def line(katz_deli)
   if katz_deli.count == 0
-    current_line = []
     puts "The line is currently empty."
   else
     current_line = []
     katz_deli.map.with_index(1) do |person, i|
-    current_line.push("#{person}. #{katz_deli[i]}")
+    current_line.push("#{i} #{person}. #{katz_deli[i]}")
+    i += 1
     end
     puts ("The line is currently " + current_line.to_s)
   end
